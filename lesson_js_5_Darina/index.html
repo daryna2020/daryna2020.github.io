@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/skeleton.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="tab">
+        <ul class="tab__list">
+            <li class="tab__item tab__item--active" data-tabnumber="1">Color</li>
+            <li class="tab__item" data-tabnumber="2">Borders</li>
+            <li class="tab__item" data-tabnumber="3">Form</li>
+        </ul>
+        <div class="tab__body">
+            <div class="tab-content ">
+                <div class="color_box"></div>
+                <h1 class="space__title"> Press "space"</h1>
+                <div class="code_color"></div>
+            </div>
+        </div>
+        <div class="tab-content">
+            <section class="grid">
+                <div class="box-part">
+                    <div class="box"></div>
+                    <h2>Выберите параметры:</h2>
+                    <input type="text" id="hex">
+                    <input type="color" id="color">
+                    <div class="ranges">
+                        <input class="inputLt" type="range" minlength="0" maxlength="100">
+                        <input class="inputRt" type="range" minlength="0" maxlength="100">
+                        <input class="inputLb" type="range" minlength="0" maxlength="100">
+                        <input class="inputRb" type="range" minlength="0" maxlength="100">
+                    </div>
+                </div>
+                <div class="copy-part">
+                    <ul>
+                        <li class="bg-color"></li>
+                        <li class="Lt"></li>
+                        <li class="Rt"></li>
+                        <li class="Lb"></li>
+                        <li class="Rb"></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="tab-content">
+            <form action="#" method="POST" class="js-form">
+                <div class="row">
+                    <div class="six columns">
+                        <label for="exampleEmailInput">Ваш email</label>
+                        <input class="u-full-width" type="email" name="user-email" placeholder="test@mailbox.com"
+                            id="exampleEmailInput" data-validate-field="email" required>
+                    </div>
+                    <div class="six columns">
+                        <label for="exampleRecipientInput">Имя</label>
+                        <input type="text" placeholder="Введите имя" data-validate-field="name" name="user-name"
+                            required >
+                    </div>
+                </div>
+                <div>
+                    <label for="exampleRecipientInput">Телефон</label>
+                    <input class="phoneInput" type="tel" placeholder="Ваш номер телефона" data-validate-field="phone"
+                        name=user-phone required>
+                </div>
+                <label for="exampleMessage">Сообщение</label>
+                <textarea class="u-full-width"  placeholder="Привет…" id="exampleMessage" name="user-message" 
+                    required></textarea>
+                <input class="button-primary" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script src="inputmask.min.js"></script>
+    <script src="just-validate.min.js"></script>
+    <script src="common.js"></script>
+</body>
+
+</html>

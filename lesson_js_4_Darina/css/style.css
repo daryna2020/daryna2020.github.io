@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    width: 500px;
+}
+
+.button-primary {
+    background-color: rgb(148, 63, 63) !important;
+    border: black !important;
+}

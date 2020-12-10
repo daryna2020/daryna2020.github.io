@@ -1,0 +1,166 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "PT Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/* tabs */
+
+.tab {
+    width: 90%;
+    margin-top: 50px;
+}
+
+.tab__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.tab__item {
+    font-style: 18px;
+    padding: 10px 50px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    flex-shrink: 0;
+}
+
+.tab__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.tab__item--active::before {
+    animation: bgSlide 0.5s ease-in-out normal forwards;
+    background-color: rgb(156, 39, 39);
+}
+
+.tab__item:last-child {
+    margin-right: 0;
+}
+
+.tab__item--active {
+    background-color: rgb(156, 39, 39);
+    color: white;
+}
+
+.tab__body {
+    margin-top: 40px;
+}
+
+.tab--hidden {
+    display: none;
+}
+
+@keyframes bgSlide {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.code_color {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.space__title {
+    font-size: 24px;
+}
+
+/* гeнератор цвета */
+.color_box {
+    position: relative;
+    width: 212px;
+    height: 100px;
+}
+
+.color_box::before,
+.color_box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 20px solid;
+    -moz-border-radius: 50px 50px 0 50px;
+    border-radius: 50px 50px 0 50px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.color_box::after {
+    left: auto;
+    right: 0;
+    -moz-border-radius: 50px 50px 50px 0;
+    border-radius: 50px 50px 50px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* borders */
+
+.box {
+    height: 300px;
+    width: 300px;
+    background: #000;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.borders {
+    margin-right: 25px;
+    font-size: 40px;
+}
+
+.input {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+}
+
+li {
+    margin-top: 10px;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+/* Форма */
+
+form {
+    width: 500px;
+}
+
+.button-primary {
+    background-color: rgb(148, 63, 63) !important;
+    border: black !important;
+}

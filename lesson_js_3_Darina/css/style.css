@@ -1,0 +1,78 @@
+body {
+    margin: 0 auto;
+    padding: 20px 100px 0 100px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn :hover {
+    background-color: rgb(135, 177, 133);
+}
+
+a {
+    text-decoration: none;
+}
+
+.space {
+    margin-right: 25px;
+    font-size: 40px;
+    color: rgb(230, 84, 127);
+}
+
+.borders {
+    margin-right: 25px;
+    font-size: 40px;
+    color: rgb(168, 11, 155);
+}
+
+.back {
+    font-style: italic;
+    cursor: alias;
+}
+
+.space__title {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+.bg-green {
+    background: rgb(84, 179, 84);
+}
+
+.bg-red {
+    background: rgb(211, 96, 96);
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    background: #000;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.input {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+}
+
+li {
+    margin-top: 10px;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+ul {
+    width: 180px;
+    height: 210px;
+    border: 1px solid;
+}
