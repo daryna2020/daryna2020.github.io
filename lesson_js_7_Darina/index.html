@@ -7,16 +7,50 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="header">
-            <h1>Список дел</h1>
-            <input type="text" placeholder="Введите новое дело..." id="toDoEl">
-            <span class="addBtn" onclick="newElement()">Добавить</span>
-        </div>
-        <ul id="list">
-    
+    <div class="tab">
+        <ul class="tab__list">
+            <li class="tab__item tab__item--active" data-tabnumber="1">Array</li>
+            <li class="tab__item" data-tabnumber="2">Color</li>
+            <li class="tab__item" data-tabnumber="3">Borders</li>
         </ul>
-    </div> 
+        <div class="tab__body">
+            <div class="tab-content">
+                <button class="btn__rus">rus</button>
+                <button class="btn__eng">eng</button>
+            </div>
+            <div class="tab-content">
+                <div class="color_box"></div>
+                <h1 class="space__title"> Press "space"</h1>
+                <div class="code_color"></div>
+            </div>
+            <div class="tab-content">
+                <section class="grid">
+                    <div class="box-part">
+                        <div class="box"></div>
+                        <h2>Выберите параметры:</h2>
+                        <input type="text" id="hex">
+                        <input type="color" id="color">
+                        <div class="ranges">
+                            <input class="inputLt" type="range" minlength="0" maxlength="100">
+                            <input class="inputRt" type="range" minlength="0" maxlength="100">
+                            <input class="inputLb" type="range" minlength="0" maxlength="100">
+                            <input class="inputRb" type="range" minlength="0" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="copy-part">
+                        <ul>
+                            <li class="bg-color"></li>
+                            <li class="Lt"></li>
+                            <li class="Rt"></li>
+                            <li class="Lb"></li>
+                            <li class="Rb"></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./common.js"></script>
 </body>
 </html>
